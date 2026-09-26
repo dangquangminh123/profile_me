@@ -408,7 +408,7 @@ function Pricing() {
         <SectionTitle
           eyebrow="BẢNG GIÁ DỊCH VỤ"
           title="Chọn gói phù hợp với nhu cầu của bạn"
-          description="Gói cho thuê toàn bộ tính năng e-commerce sẵn sàng vận hành chỉ với 2.700.000đ, hoặc gói nâng cao tùy chỉnh theo nhu cầu riêng."
+          description="Gói Toàn Diện với đầy đủ tính năng e-commerce sẵn sàng vận hành, trợ giá Flash Sale 50% đặc biệt, hoặc gói nâng cao tùy chỉnh theo yêu cầu."
         />
         <div className="pricing__grid">
           {pricingPlans.map((plan) => (
@@ -418,14 +418,14 @@ function Pricing() {
             >
               {plan.popular && (
                 <div className="pricing-card__badge">
-                  <Star /> Lựa chọn tối ưu — Phổ biến nhất
+                  <Star /> 🔥 FLASH SALE 50% — 5 SUẤT ĐẦU TIÊN
                 </div>
               )}
               <h3 className="pricing-card__name">{plan.name}</h3>
               <div className="pricing-card__price">
                 <span>{plan.price}</span>
                 {plan.period && (
-                  <small className="pricing-card__period">/{plan.period}</small>
+                  <small className="pricing-card__period">({plan.period})</small>
                 )}
               </div>
               <p className="pricing-card__desc">{plan.description}</p>
@@ -440,7 +440,7 @@ function Pricing() {
                 className={`btn ${plan.popular ? "btn--primary" : "btn--outline"} pricing-card__cta`}
                 href="#contact"
               >
-                {plan.popular ? "Thuê toàn bộ tính năng ngay" : "Liên hệ tư vấn nâng cao"}
+                {plan.popular ? "Nhận ưu đãi Flash Sale 50% ngay" : "Liên hệ tư vấn nâng cao"}
               </a>
             </article>
           ))}

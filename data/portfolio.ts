@@ -147,11 +147,11 @@ export const features = [
 
 export const pricingPlans = [
   {
-    name: "Cho Thuê Toàn Bộ Tính Năng",
-    price: "2.700.000đ",
-    period: "trọn gói",
+    name: "Gói Toàn Diện",
+    price: "Flash Sale -50%",
+    period: "ưu đãi giới hạn",
     description:
-      "Gói cho thuê toàn bộ hệ thống e-commerce với đầy đủ tất cả luồng nghiệp vụ hiện có — sẵn sàng kinh doanh và vận hành ngay lập tức.",
+      "Trọn gói toàn bộ hệ thống e-commerce với đầy đủ tất cả luồng nghiệp vụ hiện có — sẵn sàng kinh doanh và vận hành ngay với mức trợ giá 50% đặc biệt.",
     features: [
       "Toàn bộ giao diện bán hàng B2C + B2B chuẩn Responsive",
       "Hệ thống quản trị Admin Panel toàn diện 11+ module",
@@ -168,11 +168,11 @@ export const pricingPlans = [
   {
     name: "Gói Nâng Cao",
     price: "Liên hệ",
-    period: "",
+    period: "theo yêu cầu",
     description:
       "Dành cho khách hàng có nhu cầu mở rộng tính năng mới theo yêu cầu riêng, thiết kế độc quyền hoặc tích hợp hệ thống chuyên biệt.",
     features: [
-      "Bao gồm toàn bộ tính năng của gói Cho Thuê E-Commerce",
+      "Bao gồm toàn bộ tính năng của Gói Toàn Diện",
       "Phát triển tính năng mới theo yêu cầu riêng của bạn",
       "Tùy biến luồng nghiệp vụ & giao diện độc quyền",
       "Tích hợp API, CRM hoặc cổng thanh toán bên thứ 3",
