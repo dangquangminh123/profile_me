@@ -17,9 +17,12 @@ npm install --production=false
 echo "🔨 3. Đang build Next.js..."
 npm run build
 
-# 4. Reload tiến trình trên PM2 (không gián đoạn)
-echo "🔄 4. Đang restart ứng dụng trên PM2..."
-pm2 restart profile-me
+# 4. Tắt sạch tiến trình cũ và khởi động lại
+echo "🔄 4. Đang làm mới hoàn toàn tiến trình PM2..."
+pm2 delete profile-me || true
+pkill -f "next" || true
+pm2 start npm --name "profile-me" -- start -- -p 3001
+pm2 save
 
 echo "=========================================="
 echo "✅ HOÀN TẤT CẬP NHẬT WEBSITE THÀNH CÔNG!"
